@@ -1,0 +1,42 @@
+// pico_cmake_set PICO_PLATFORM=rp2040
+
+#ifndef _BOARDS_PICOSSCI_USBHOST_H
+#define _BOARDS_PICOSSCI_USBHOST_H
+
+#define RASPBERRYPI_PICO
+
+#ifndef PICO_DEFAULT_UART
+#define PICO_DEFAULT_UART 1
+#endif
+#ifndef PICO_DEFAULT_UART_TX_PIN
+#define PICO_DEFAULT_UART_TX_PIN 8
+#endif
+#ifndef PICO_DEFAULT_UART_RX_PIN
+#define PICO_DEFAULT_UART_RX_PIN 9
+#endif
+
+#ifndef PICO_DEFAULT_LED_PIN
+#define PICO_DEFAULT_LED_PIN 25
+#endif
+
+
+#define PICO_BOOT_STAGE2_CHOOSE_W25Q080 1
+
+#ifndef PICO_FLASH_SPI_CLKDIV
+#define PICO_FLASH_SPI_CLKDIV 2
+#endif
+
+// pico_cmake_set_default PICO_FLASH_SIZE_BYTES = (2 * 1024 * 1024)
+#ifndef PICO_FLASH_SIZE_BYTES
+#define PICO_FLASH_SIZE_BYTES (2 * 1024 * 1024)
+#endif
+
+#define PICO_SMPS_MODE_PIN 23
+
+#ifndef PICO_RP2040_B0_SUPPORTED
+#define PICO_RP2040_B0_SUPPORTED 1
+#endif
+
+#define PIO_USB_DP_PIN_DEFAULT 0
+
+#endif
