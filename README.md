@@ -36,7 +36,7 @@
 - `cd build`
 - `cmake ..`
 - `make -j` or `make -j VERBOSE=1`
-- Copy `usbhidproxy.uf2' to the board in USB mass storage mode.
+- Copy `usbhidproxy.uf2` to the board in USB mass storage mode.
 - Connect a USB HID device.
 - Reset
 
@@ -47,8 +47,8 @@
 - By memory constraint, there are some restrictions
   - Only one language of USB descriptor is supported.
   - USB descriptor report and HID report size is limited.
-  - If a USB HID device has a big descriptor or a report size, it may not work.
-  - One USB HID device may have some instances of HID. Currently, a maximum number of instance is 8(HID_INSTANCE_MAX).
+  - If a USB HID device has a big descriptor or report size, it may not work.
+  - One USB HID device may have some instances of HID. Currently, a maximum number of instance is 8(`HID_INSTANCE_MAX`).
 - This does not parse descriptor report and has an assumption that a USB device has a typical(normal) layout.
   - Some devices may not work correctly.
 - WinUSB is not supported.
@@ -57,8 +57,8 @@
 
 ## Furthermore
 - It is easy to remap whole keycode like Dvorak or etc if you want.
-  - To debug, UART must be wired to get output.
-- To use another proxy hardware (including Raspberry Pi Pico + USB A receptacle cable), add a header file to board_include and check tusb_config.h is correct for the board.
+  - To debug, UART must be wired for `debugPrintf()`.
+- To use another proxy hardware (including Raspberry Pi Pico + USB A receptacle cable), add a header file to `board_include/` and check whether `tusb_config.h` is correct for the board.
   - RP2350 is not tested. (ex. Pico 2 or https://www.waveshare.com/wiki/RP2350-USB-A )
 
 ## Reference
