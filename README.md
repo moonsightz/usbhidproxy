@@ -22,7 +22,7 @@
 
   Current code swaps control/caps or left/right mouse buttons.
 
-  Unlike HID remapper, proxy uses a descriptor USB HID device.  From OS, proxy hardware looks like a connected USB HID device.  I don't know whether it complaints with USB standard, so use where you can take responsibility by yourself.
+  Unlike HID remapper, proxy uses a descriptor USB HID device.  From OS, proxy hardware looks like a connected USB HID device.  I don't know if it complains with USB standard, so use where you can take responsibility by yourself.
 
 ## To customize swap keys/buttons
   Change code.  No configuration file or method.
