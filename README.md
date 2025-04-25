@@ -22,7 +22,7 @@
 
   Current code swaps control/caps or left/right mouse buttons.
 
-  Unlike HID remapper, proxy uses a descriptor USB HID device.  From OS, proxy hardware looks like a connected USB HID device.  I don't know if it complains with USB standard, so use where you can take responsibility by yourself.
+  Unlike HID remapper, a descriptor of a connected USB HID device is used.  From OS, proxy hardware looks like a connected USB HID device.  I don't know if it complains with USB standard, so use where you can take responsibility by yourself.
 
 ## To customize swap keys/buttons
   Change code.  No configuration file or method.
@@ -48,7 +48,7 @@
   - Only one language of USB descriptor is supported.
   - USB descriptor report and HID report size is limited.
   - If a USB HID device has a big descriptor or report size, it may not work.
-  - One USB HID device may have some instances of HID. Currently, a maximum number of instance is 8(`HID_INSTANCE_MAX`).
+  - One USB HID device may have multiple instances of HID. Currently, a maximum number of instance is 8(`HID_INSTANCE_MAX`).
 - This does not parse descriptor report and has an assumption that a USB device has a typical(normal) layout.
   - Some devices may not work correctly.
 - WinUSB is not supported.
