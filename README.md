@@ -63,6 +63,7 @@
 
 ## Reference
 - HID remapper : https://github.com/jfedor2/hid-remapper
+- TinyUSB : https://github.com/hathach/tinyusb
 - Pico-PIO-USB : https://github.com/sekigon-gonnoc/Pico-PIO-USB
 - Raspberry Pi Pico SDK : https://github.com/raspberrypi/pico-sdk
 
